@@ -26,6 +26,14 @@ class FioRead extends Fio
         $this->context = $context;
         $this->parser = $statementFactory->createParser();
     }
+	
+	/**
+	 * Set another token than config.neon
+	 * @param string $token
+	 */
+	public function setToken($token) {
+		$this->context->setToken($token);
+	}
 
     /**
      * Movements in date range.

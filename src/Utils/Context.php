@@ -40,5 +40,13 @@ class Context extends Object
     {
         return self::REST_URL;
     }
+	
+	/**
+	 * Set another token then config.neon
+	 * @param string $token
+	 */
+	public function setToken($token) {
+		$this->token = $token;
+	}
 
 }
